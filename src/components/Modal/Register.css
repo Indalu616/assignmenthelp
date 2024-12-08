@@ -1,0 +1,10 @@
+.btn-primary {
+  background-color: transparent !important;
+}
+.submit-btn {
+  color: #70667f !important;
+  transition: all 0.4s !important;
+}
+.submit-btn:hover{
+    background-color: gold !important;
+}

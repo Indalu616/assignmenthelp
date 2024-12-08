@@ -1,0 +1,26 @@
+.contact-btn-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem !important;
+}
+.contact-btn-send button {
+  display: block !important;
+  background-color: aqua !important;
+}
+.location-address {
+  background-color: #032642 !important;
+  color: rgba(255, 255, 255, 0.723) !important;
+  /* margin-bottom: 4rem !important; */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.location-wrapper {
+  width: 100%;
+}
+.address-container p {
+  margin-bottom: 0 !important;
+}
+.address-icon{
+    width: 6rem !important;
+}

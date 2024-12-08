@@ -1,0 +1,39 @@
+.navbar {
+  padding-bottom: 0 !important;
+}
+.navbar-brand,
+.nav-links {
+  padding-bottom: 1.3rem !important;
+}
+.nav-home {
+  background-color: #363636 !important;
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 400 !important;
+  width: 100% !important;
+  margin-bottom: 4rem !important;
+}
+.navbar-toggler {
+  color: white !important;
+  background-color: white !important;
+}
+.nav-links {
+  font-size: 0.9rem !important;
+  font-weight: 600 !important;
+  color: #dddddd !important;
+  transition: all 0.4s !important;
+  border-bottom: 2px solid #363636 !important;
+}
+.brand-logo {
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  color: #ffc928c5 !important;
+}
+.nav-links:hover {
+  color: #ffca28 !important;
+  border-bottom: 0.1rem solid yellow !important;
+}
+.focused {
+  border-bottom: 0.1rem solid yellow !important;
+  color: #ffc928c5 !important;
+}

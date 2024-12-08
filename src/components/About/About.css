@@ -1,0 +1,64 @@
+.dark-color {
+  color: #70667f !important;
+}
+.about-h2,
+.about-p {
+  color: #70667f !important;
+}
+.about-main {
+  margin-top: 5rem !important;
+  margin-bottom: 3rem !important;
+}
+.icon {
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: aquamarine !important;
+}
+.icon-rapper {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9 !important;
+  cursor: no-drop !important;
+}
+.about-section-p {
+  line-height: 1.6rem !important;
+  margin-bottom: 3rem !important;
+}
+/* join us section */
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.join-us {
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url("../../Images/join-us.jpeg");
+  /* background-color: #f9f9f91f !important; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem !important;
+}
+.join-us-content {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+.join-h2,
+.join-p {
+  font-weight: 700 !important;
+}
+.join-btn {
+  font-size: 0.9rem !important;
+  font-weight: 500 !important;
+}
+.about-icon {
+  width: 1.875rem !important;
+}
+.register-btn {
+  color: white !important;
+  transition: all 0.4s !important;
+}
+.register-btn:hover {
+  background-color: gold !important;
+  color: #70667f !important;
+}
