@@ -1,12 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
-import Form from "react-bootstrap/Form";
 import Lottie from "lottie-react";
 import email from "./Email.json";
 import call from "./CallUs.json";
 import location from "./Location.json";
 import whattsapp from "./Whattsapp.json";
+import { APPI_KEY } from "../../WebForm";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Contact() {
+  const [result, setResult] = useState("");
+  const notify = () => toast(result);
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    console.log("invoked");
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    formData.append("access_key", APPI_KEY);
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      console.log(data);
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <div className="container-fluid pt-4" id="contact">
       <div className="container">
@@ -17,31 +42,54 @@ function Contact() {
           Any Questions or remarks? just write us a message!
         </p>
         <div className="form-container">
-          <Form>
+          <form onSubmit={onSubmit}>
             <div className="row">
               <div className="col-md-6 mb-3">
-                <Form.Group className="mb-3" controlId="email">
-                  <Form.Label className="dark-color">Email:</Form.Label>
-                  <Form.Control type="email" placeholder="name@example.com" />
-                </Form.Group>
+                <div className="mb-3" controlId="email">
+                  <label className="dark-color">Email:</label>
+                  <input
+                    className="form-control"
+                    type="email"
+                    placeholder="name@example.com"
+                    name="email"
+                    style={{ backgroundColor: "#E8F0FE" }}
+                  />
+                </div>
               </div>
               <div className="col-md-6 mb-3">
-                <Form.Group className="mb-3" controlId="name">
-                  <Form.Label className="dark-color">Name:</Form.Label>
-                  <Form.Control type="text" placeholder="Your name" />
-                </Form.Group>
+                <div className="mb-3" controlId="name">
+                  <label className="dark-color">Name:</label>
+                  <input
+                    className="form-control"
+                    type="text"
+                    placeholder="Your name"
+                    name="name"
+                    style={{ backgroundColor: "#E8F0FE" }}
+                  />
+                </div>
               </div>
             </div>
-            <Form.Group className="mb-3" controlId="message">
-              <Form.Label className="dark-color">Message:</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-          </Form>
-          <div className="contact-btn-send">
-            <button className="btn rounded text-center text-uppercase text-white">
-              Send us message
-            </button>
-          </div>
+            <div className="mb-3" controlId="message">
+              <label className="dark-color">Message:</label>
+              <textarea
+                className="form-control"
+                as="textarea"
+                rows="3"
+                name="message"
+                style={{ backgroundColor: "#E8F0FE" }}
+              />
+            </div>
+            <div className="contact-btn-send">
+              <button
+                className="btn rounded text-center text-uppercase text-white"
+                type="submit"
+                onClick={notify}
+              >
+                Send us message
+              </button>
+            </div>
+            <ToastContainer />
+          </form>
         </div>
       </div>
 

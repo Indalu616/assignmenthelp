@@ -7,7 +7,6 @@ function NavbarApp() {
   const [id, setId] = useState("home");
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      console.log(window.scrollY);
       if (window.scrollY >= 0 && window.scrollY < 500) {
         setId("home");
       } else if (window.scrollY >= 500 && window.scrollY < 1500) {
