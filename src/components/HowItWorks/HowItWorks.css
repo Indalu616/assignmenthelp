@@ -1,0 +1,36 @@
+.how-it-works {
+  background-color: #f2efe6 !important;
+  margin-top: 5rem !important;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.how-it-works-h3 {
+  color: #1d3f29 !important;
+  font-weight: 600 !important;
+  margin-bottom: 4rem !important;
+}
+.how-it-works-p {
+  color: #1d3f29 !important;
+}
+.step {
+  margin-bottom: 3rem !important;
+  font-size: 1.5rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step span {
+  background-color: #1d3f29 !important;
+  text-align: center !important;
+  color: white !important;
+  width: 3rem !important;
+  height: 3rem !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.step-title{
+    color: #1d3f29 !important;
+    font-weight: 600;
+}

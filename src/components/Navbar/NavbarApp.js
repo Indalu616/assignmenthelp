@@ -7,15 +7,18 @@ function NavbarApp() {
   const [id, setId] = useState("home");
   useEffect(() => {
     window.addEventListener("scroll", () => {
+      console.log(window.scrollY);
       if (window.scrollY >= 0 && window.scrollY < 500) {
         setId("home");
       } else if (window.scrollY >= 500 && window.scrollY < 1500) {
         setId("about");
-      } else if (window.scrollY >= 1500 && window.scrollY < 2000) {
+      } else if (window.scrollY >= 1500 && window.scrollY < 2100) {
         setId("service");
-      } else if (window.scrollY >= 2000 && window.scrollY < 2500) {
+      } else if (window.scrollY >=2100 && window.scrollY < 2700) {
+        setId("howWorks");
+      } else if (window.scrollY >= 2700&& window.scrollY < 3200) {
         setId("testimonial");
-      } else if (window.scrollY >= 2500) {
+      } else if (window.scrollY >= 3200) {
         setId("contact");
       }
     });
@@ -52,6 +55,14 @@ function NavbarApp() {
               }
             >
               Services
+            </Nav.Link>
+            <Nav.Link
+              href="#howWorks"
+              className={
+                id === "howWorks" ? "nav-links focused" : "text-white nav-links"
+              }
+            >
+              How it works
             </Nav.Link>
             <Nav.Link
               href="#testimonial"
