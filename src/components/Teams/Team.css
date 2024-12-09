@@ -1,0 +1,17 @@
+.teams-section{
+    margin-top: 5rem !important;
+}
+
+.team-img-section img{
+    background-color: #F2EFE6 !important;
+    border-radius: 50% !important;
+  
+}
+.team-img{
+    width: 6rem !important;
+}
+.team-img-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
