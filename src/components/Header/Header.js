@@ -9,7 +9,10 @@ function Header() {
     <div className="container-fluid header">
       <div className="header-over-lay rounded">
         <p className="header-p">Taste Our Quality Service</p>
-        <h2 className="expert">Empowering <span className="border-bottom border-warning">Your Excel</span>lence!</h2>
+        <h2 className="expert">
+          Empowering{" "}
+          <span className="border-bottom border-warning">Your Excel</span>lence!
+        </h2>
         <p>
           Struggling with assignments? Unlock your potential with expert-crafted
           solutions designed to simplify complex subjects and guarantee academic
@@ -29,8 +32,8 @@ function Header() {
                 <Lottie animationData={animi} loop={true} className="animi" />
               </span>
               <span className="phone">
-                +9715<span className="border-bottom border-warning">-09-22-3</span>
-                8-70
+                +9715<span className="border-bottom border-warning">09223</span>
+                870
               </span>
             </p>
           </div>
