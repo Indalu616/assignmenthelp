@@ -23,6 +23,7 @@
   color: #dddddd !important;
   transition: all 0.4s !important;
   border-bottom: 2px solid #363636 !important;
+  text-decoration: none !important;
 }
 .brand-logo {
   font-size: 1.4rem !important;

@@ -1,22 +1,13 @@
-import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
-import Header from "./components/Header/Header";
-import HowItWorks from "./components/HowItWorks/HowItWorks";
-import NavbarApp from "./components/Navbar/NavbarApp";
-import Team from "./components/Teams/Team";
-import Testimonial from "./components/Testimonial/Testimonial";
-import Service from "./Service/Service";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/HomePage/Home";
+import SignUp from "./components/SignInSignUp/SignUp";
 function App() {
   return (
     <div className="App">
-      <NavbarApp />
-      <Header />
-      <About />
-      <Service />
-      <HowItWorks />
-      <Team />
-      <Testimonial />
-      <Contact />
+      <Routes>
+        <Route path="/assignmenthelp/sign-up" element={<SignUp />}></Route>
+        <Route path="/assignmenthelp" element={<Home />}></Route>
+      </Routes>
     </div>
   );
 }

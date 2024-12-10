@@ -1,0 +1,39 @@
+.sign-up-page {
+  margin-top: 5rem !important;
+  box-shadow: 1.25rem 1.25rem 1.25rem rgba(0, 0, 0, 0.1),
+    -1.25rem -1.25rem 1.25rem rgba(0, 0, 0, 0.1);
+}
+.sign-up-image-section .sig-up-img {
+  width: 100% !important;
+  height: 100% !important;
+}
+.sign-up-image-section {
+  height: 100% !important;
+}
+.sign-up-image-container {
+  padding: 0 !important;
+  background: linear-gradient(
+    rgba(8, 0, 58, 0.7),
+    rgba(8, 0, 58, 0.7)
+  ) !important;
+}
+/* form-section styles */
+.form-section {
+  margin-top: 4rem !important;
+  padding-left: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+.sign-up-p {
+  font-weight: 600 !important;
+  margin-bottom: 3rem !important;
+  color: gold !important;
+}
+.sign-up-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sign-btn:hover{
+background-color: gold !important;
+transition: all 0.4s !important;
+}

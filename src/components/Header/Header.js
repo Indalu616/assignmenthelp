@@ -3,7 +3,7 @@ import "./Header.css";
 import tinyImg from "../../Images/tiny-img.png";
 import Lottie from "lottie-react";
 import animi from "./AniData.json";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import { Link } from "react-router";
 function Header() {
   return (
     <div className="container-fluid header">
@@ -21,9 +21,12 @@ function Header() {
         <div className="row display-flex align-items-center mt-3">
           <div className="col-md-6 mb-3">
             <button className="btn border rounded mb-2 border-warning contact-btn">
-              <AnchorLink href="#contact" className="anchor-link dark-color">
-                Contact us
-              </AnchorLink>
+              <Link
+                to="/assignmenthelp/sign-up"
+                className="anchor-link dark-color"
+              >
+                Get Started
+              </Link>
             </button>
           </div>
           <div className="col-md-6 mb-3">
