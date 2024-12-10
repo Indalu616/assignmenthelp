@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/assignmenthelp/static/css/main.a8fbd87c.css",
-    "main.js": "/assignmenthelp/static/js/main.16799ead.js",
+    "main.css": "/assignmenthelp/static/css/main.37592296.css",
+    "main.js": "/assignmenthelp/static/js/main.0627b502.js",
+    "static/media/sign-3-bg-removed.png": "/assignmenthelp/static/media/sign-3-bg-removed.0e9fccc14276e5aab5cc.png",
     "static/media/header-img.jpeg": "/assignmenthelp/static/media/header-img.048d019b0ec2ff31d9df.jpeg",
     "static/media/img3-bg-removed.png": "/assignmenthelp/static/media/img3-bg-removed.76cb4e7621ec32bd52f5.png",
     "static/media/img4-bg-removed.png": "/assignmenthelp/static/media/img4-bg-removed.cbbefd6ab6d765dc4e6e.png",
@@ -14,11 +15,11 @@
     "static/media/img5.png": "/assignmenthelp/static/media/img5.ddea55b0432b89b016af.png",
     "static/media/tiny-img.png": "/assignmenthelp/static/media/tiny-img.62332e4574dbcf759478.png",
     "index.html": "/assignmenthelp/index.html",
-    "main.a8fbd87c.css.map": "/assignmenthelp/static/css/main.a8fbd87c.css.map",
-    "main.16799ead.js.map": "/assignmenthelp/static/js/main.16799ead.js.map"
+    "main.37592296.css.map": "/assignmenthelp/static/css/main.37592296.css.map",
+    "main.0627b502.js.map": "/assignmenthelp/static/js/main.0627b502.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8fbd87c.css",
-    "static/js/main.16799ead.js"
+    "static/css/main.37592296.css",
+    "static/js/main.0627b502.js"
   ]
 }
