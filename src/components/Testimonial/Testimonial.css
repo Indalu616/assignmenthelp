@@ -1,8 +1,4 @@
 .testimonial {
-  background-image: url("../../Images/testimony.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
   padding-top: 3rem !important;
@@ -16,9 +12,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #e2e6e7 !important;
+  border-radius: 50% !important;
 }
 .user-name,
 .user-role {
   font-size: 0.9rem !important;
   color: #ffca28 !important;
+}
+.user-role {
+  margin-bottom: 2rem !important;
+}
+/* customizing arrow position */
+.react-multiple-carousel__arrow--right {
+  position: absolute !important;
+  right: 30% !important;
+  bottom: 0 !important;
+  margin-top: 2rem !important;
+}
+.react-multiple-carousel__arrow--left {
+  position: absolute !important;
+  left: 30% !important;
+  bottom: 0 !important;
+  margin-top: 2rem !important;
 }

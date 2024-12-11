@@ -80,7 +80,7 @@ function Contact() {
             </div>
             <div className="contact-btn-send">
               <button
-                className="btn rounded text-center text-uppercase text-white"
+                className="btn rounded text-center text-uppercase dark-color border-warning send-btn"
                 type="submit"
                 onClick={notify}
               >

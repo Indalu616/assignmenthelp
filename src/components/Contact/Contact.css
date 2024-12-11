@@ -6,12 +6,14 @@
 }
 .contact-btn-send button {
   display: block !important;
-  background-color: aqua !important;
+}
+.send-btn:hover {
+  transition: all 0.4s !important;
+  background-color: gold !important;
 }
 .location-address {
   background-color: #032642 !important;
   color: rgba(255, 255, 255, 0.723) !important;
-  /* margin-bottom: 4rem !important; */
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -21,7 +23,7 @@
 .address-container p {
   margin-bottom: 0 !important;
 }
-.address-icon{
+.address-icon {
   font-size: 1.5rem !important;
   margin-bottom: 1rem !important;
   margin-top: 1rem !important;

@@ -2,6 +2,8 @@
   background-color: #032642 !important;
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+  border-radius: 1.75rem !important;
+  box-shadow: 1.25rem 1.25rem 1.25rem rgba(0, 0, 0, 0.5),-1.25rem -1.25rem 1.25rem rgba(0, 0, 0, 0.5);
 }
 .service-h2 {
   font-weight: 700 !important;

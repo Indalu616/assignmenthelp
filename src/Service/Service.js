@@ -6,7 +6,7 @@ import code from "./Coding.json";
 import tutor from "./Tutor.json";
 function Service() {
   return (
-    <div className="container mb-3 service rounded" id="service">
+    <div className="container mb-3 service" id="service">
       <p className="text-center mt-3" style={{ color: "#f4faffd2" }}>
         Our <span className="border-bottom border-warning">services</span>
       </p>
