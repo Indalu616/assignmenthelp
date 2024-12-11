@@ -1,26 +1,31 @@
 {
   "files": {
-    "main.css": "/assignmenthelp/static/css/main.42026f7d.css",
-    "main.js": "/assignmenthelp/static/js/main.13d1b445.js",
+    "main.css": "/assignmenthelp/static/css/main.af4da8cb.css",
+    "main.js": "/assignmenthelp/static/js/main.23e02d7b.js",
     "static/media/sign-3-bg-removed.png": "/assignmenthelp/static/media/sign-3-bg-removed.0e9fccc14276e5aab5cc.png",
     "static/media/header-img.jpeg": "/assignmenthelp/static/media/header-img.048d019b0ec2ff31d9df.jpeg",
+    "static/media/Test1.png": "/assignmenthelp/static/media/Test1.f354a78cdc224bad085b.png",
+    "static/media/Test2.png": "/assignmenthelp/static/media/Test2.c842d42749605cc882f3.png",
     "static/media/img3-bg-removed.png": "/assignmenthelp/static/media/img3-bg-removed.76cb4e7621ec32bd52f5.png",
+    "static/media/Test3.png": "/assignmenthelp/static/media/Test3.3622faa5f245eec47aba.png",
     "static/media/img4-bg-removed.png": "/assignmenthelp/static/media/img4-bg-removed.cbbefd6ab6d765dc4e6e.png",
     "static/media/img2-bg-removed.png": "/assignmenthelp/static/media/img2-bg-removed.0c46f58980acde64303e.png",
     "static/media/join-us.jpeg": "/assignmenthelp/static/media/join-us.3c5e71ec6fadb37d2c2e.jpeg",
     "static/media/about-img.avif": "/assignmenthelp/static/media/about-img.74eaf46bf066b07ea2c2.avif",
     "static/media/img1-bg-removed.png": "/assignmenthelp/static/media/img1-bg-removed.a74ec52014d7e10565bb.png",
-    "static/media/user.png": "/assignmenthelp/static/media/user.2d5a75412f57f1b07a59.png",
-    "static/media/testimony.png": "/assignmenthelp/static/media/testimony.37e09a342e90966a4544.png",
     "static/media/dummy-removebg.png": "/assignmenthelp/static/media/dummy-removebg.f2d2e98507f756cae07d.png",
+    "static/media/user.png": "/assignmenthelp/static/media/user.9796c1ef5066898be441.png",
     "static/media/img5.png": "/assignmenthelp/static/media/img5.ddea55b0432b89b016af.png",
+    "static/media/revicons.eot": "/assignmenthelp/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/assignmenthelp/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/tiny-img.png": "/assignmenthelp/static/media/tiny-img.62332e4574dbcf759478.png",
+    "static/media/revicons.woff": "/assignmenthelp/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/assignmenthelp/index.html",
-    "main.42026f7d.css.map": "/assignmenthelp/static/css/main.42026f7d.css.map",
-    "main.13d1b445.js.map": "/assignmenthelp/static/js/main.13d1b445.js.map"
+    "main.af4da8cb.css.map": "/assignmenthelp/static/css/main.af4da8cb.css.map",
+    "main.23e02d7b.js.map": "/assignmenthelp/static/js/main.23e02d7b.js.map"
   },
   "entrypoints": [
-    "static/css/main.42026f7d.css",
-    "static/js/main.13d1b445.js"
+    "static/css/main.af4da8cb.css",
+    "static/js/main.23e02d7b.js"
   ]
 }
