@@ -1,15 +1,16 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { FIREBASE_KEY } from "./WebForm";
 const firebaseConfig = {
-  apiKey: "AIzaSyBeNmRWwO-AkBNWgKoPks3tXqYSnYQzmUY",
-  authDomain: "assignmenthelp-a980c.firebaseapp.com",
-  projectId: "assignmenthelp-a980c",
-  storageBucket: "assignmenthelp-a980c.firebasestorage.app",
-  messagingSenderId: "666912366367",
-  appId: "1:666912366367:web:94a36943d5890b3e18da2a",
+  apiKey: FIREBASE_KEY.apiKey,
+  authDomain: FIREBASE_KEY.authDomain,
+  projectId: FIREBASE_KEY.projectId,
+  storageBucket: FIREBASE_KEY.storageBucket,
+  messagingSenderId: FIREBASE_KEY.messagingSenderId,
+  appId: FIREBASE_KEY.appId,
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const db=getFirestore(app);
+export const db = getFirestore(app);
