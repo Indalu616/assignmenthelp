@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import Lottie from "lottie-react";
-import email from "./Email.json";
-import call from "./CallUs.json";
-import location from "./Location.json";
-import whattsapp from "./Whattsapp.json";
 import { APPI_KEY } from "../../WebForm";
 import { ToastContainer, toast } from "react-toastify";
+import { MdOutlineAddIcCall } from "react-icons/md";
+import { TfiEmail } from "react-icons/tfi";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
 import "react-toastify/dist/ReactToastify.css";
 function Contact() {
   const [result, setResult] = useState("");
-  const notify = () => toast(result);
+  const notify = () => toast.success(result);
   const onSubmit = async (event) => {
     event.preventDefault();
     console.log("invoked");
@@ -100,11 +99,7 @@ function Contact() {
             <div className="row address-container">
               <div className="col">
                 <div>
-                  <Lottie
-                    animationData={email}
-                    loop={true}
-                    className="address-icon"
-                  />
+                  <TfiEmail className="address-icon" />
                 </div>
                 <div>
                   <p>Email us</p>
@@ -113,11 +108,7 @@ function Contact() {
               </div>
               <div className="col">
                 <div>
-                  <Lottie
-                    animationData={call}
-                    loop={true}
-                    className="address-icon"
-                  />
+                  <MdOutlineAddIcCall className="address-icon" />
                 </div>
                 <div>
                   <p>Phone</p>
@@ -126,11 +117,7 @@ function Contact() {
               </div>
               <div className="col">
                 <div>
-                  <Lottie
-                    animationData={location}
-                    loop={true}
-                    className="address-icon"
-                  />
+                  <FaLocationDot className="address-icon" />
                 </div>
                 <div>
                   <p>Our Location</p>
@@ -140,11 +127,7 @@ function Contact() {
 
               <div className="col">
                 <div>
-                  <Lottie
-                    animationData={whattsapp}
-                    loop={true}
-                    className="address-icon"
-                  />
+                  <FaWhatsapp className="address-icon" />
                 </div>
                 <div>
                   <p>Join Our Whattsapp Group</p>

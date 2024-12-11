@@ -2,23 +2,21 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./Register.css";
-import Form from "react-bootstrap/Form";
-import { ToastContainer, toast } from "react-toastify";
+import { FaTelegram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import "react-toastify/dist/ReactToastify.css";
 function Register() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const notify = () => toast("Registered successfully!");
   return (
     <>
       <Button
         onClick={handleShow}
         className="btn rounded border-warning  register-btn"
       >
-        Register Now
+        Join Now
       </Button>
-
       <Modal
         show={show}
         onHide={handleClose}
@@ -27,30 +25,37 @@ function Register() {
       >
         <Modal.Header closeButton>
           <Modal.Title className="dark-color">
-            Welcome to <span className="text-warning">Expert</span>
+            <h5 className="text-center" style={{ color: "#D1A72B" }}>
+              Connect with Us on Social Media!
+            </h5>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
-            <Form.Group className="mb-3" controlId="name">
-              <Form.Label className="dark-color">Full name</Form.Label>
-              <Form.Control type="text" placeholder="Your name here..." />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="phone">
-              <Form.Label className="dark-color">Phone Number</Form.Label>
-              <Form.Control type="text" placeholder="phone number here..." />
-            </Form.Group>
-          </Form>
+          <div>
+            <p className="dark-color">
+              Stay updated and connected with us through our social media
+              channels! Join our Telegram and WhatsApp communities to access the
+              latest updates, helpful resources, and engage in meaningful
+              discussions.
+            </p>
+            <h6 className="text-center" style={{ color: "#D1A72B" }}>
+              Join our{" "}
+              <span className="border-bottom border-warning">community</span>{" "}
+              channel
+            </h6>
+            <div className="social">
+              <a className="social-btn" href="https://t.me/+ZjDmQWCeI_0yMDFk">
+                <FaTelegram className="social-icon text-white" />
+              </a>
+              <a
+                className="social-btn"
+                href="https://chat.whatsapp.com/H8XWrD2x9TNKC0rPCkZH22"
+              >
+                <FaWhatsapp className="social-icon text-white" />
+              </a>
+            </div>
+          </div>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button className="submit-btn border-warning" onClick={notify}>
-            Submit
-          </Button>
-          <ToastContainer />
-        </Modal.Footer>
       </Modal>
     </>
   );

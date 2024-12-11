@@ -1,9 +1,67 @@
 import React, { useState } from "react";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { collection, addDoc } from "firebase/firestore";
 import "./SignInSignUp.css";
 import sing3 from "../../Images/sign-3-bg-removed.png";
 import PrivateNav from "../PivateNav/PrivateNav";
+import { app, db } from "../../firebaseConfig";
+import { useNavigate } from "react-router";
+import "react-toastify/dist/ReactToastify.css";
 function SignUp() {
   const [signin, setSignIn] = useState(false);
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const auth = getAuth(app);
+  const SignUp = () => {
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed up
+        registerUser();
+        setSignIn(true);
+        const user = userCredential.user;
+
+        console.log(user);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+        // ..
+      });
+  };
+  // register user method
+  const registerUser = async () => {
+    try {
+      const docRef = await addDoc(collection(db, "users"), {
+        Name: name,
+        Phone: phone,
+        email: email,
+      });
+      console.log("Document written with ID: ", docRef.id);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  };
+  // sigin method
+  const SigIn = () => {
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        navigate("/assignmenthelp/dashboard");
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        console.log(errorMessage);
+      });
+  };
   const loadSigINPage = () => {
     setSignIn(true);
   };
@@ -46,6 +104,7 @@ function SignUp() {
                     className="form-control"
                     id="name"
                     placeholder="Name..."
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
               ) : (
@@ -60,6 +119,7 @@ function SignUp() {
                   className="form-control"
                   id="email"
                   placeholder="name@example.com..."
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               {!signin ? (
@@ -72,6 +132,7 @@ function SignUp() {
                     className="form-control"
                     id="phone"
                     placeholder="+971..."
+                    onChange={(e) => setPhone(e.target.value)}
                   />
                 </div>
               ) : (
@@ -85,14 +146,28 @@ function SignUp() {
                   type="text"
                   className="form-control"
                   id="password"
-                  placeholder="*******..."
+                  placeholder="*******"
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
             </div>
             <div className="sign-up-btn">
-              <button className="btn btn-rounded border-warning me-3 dark-color sign-btn">
-                {!signin ? "Sign Up" : "Sign in"}
-              </button>
+              {!signin ? (
+                <button
+                  className="btn btn-rounded border-warning me-3 dark-color sign-btn"
+                  onClick={SignUp}
+                >
+                  Sign Up
+                </button>
+              ) : (
+                <button
+                  className="btn btn-rounded border-warning me-3 dark-color sign-btn"
+                  onClick={SigIn}
+                >
+                  Sign in
+                </button>
+              )}
+
               {!signin ? (
                 <button className="btn  text-warning" onClick={loadSigINPage}>
                   <span className="border-bottom border-warning">Sign</span> in

@@ -22,5 +22,8 @@
   margin-bottom: 0 !important;
 }
 .address-icon{
-    width: 6rem !important;
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+  color: cadetblue !important;
 }

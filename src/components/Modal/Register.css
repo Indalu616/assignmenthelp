@@ -5,6 +5,31 @@
   color: #70667f !important;
   transition: all 0.4s !important;
 }
-.submit-btn:hover{
-    background-color: gold !important;
+.submit-btn:hover {
+  background-color: gold !important;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem !important;
+}
+.social .social-btn {
+  border: none !important;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem !important;
+  background-color: blueviolet !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem !important;
+  transition: all 0.4s !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+.social-btn:hover{
+  background-color: black !important;
 }
